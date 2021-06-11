@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>자바스크립트 예제</title>
+    </head>
+    <body>
+        <script>
+            var brith=document.getElementById('birthday').value.split("-");
+            var day = new Data(birth[0], birth[1]-1, birth[2]);
+            var nowday = new Data();
+            var diff = nowday.getTime() - day.getTime();
+            var age = diff / 365;
+            document.getElementById("days").innerHTML=differ;
+            document.getElementById("od").innerHTML=age;
+        </script>
+        <form>
+            <h1>내가 살아온 인생 계산하기</h1>
+            <p>싱년월일 입력</p>
+            <input type="text" name="birthday" id="birthday" value="0000-00-00">
+            <input type="submit" value="제출">
+            <p>테어나서 <span id="days"></span>일 경과해서 지금은 <span id="old"></span>살입니다.</p>
+        </form>
+    </body>
+</html>

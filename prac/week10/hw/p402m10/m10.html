@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>자바스크립트 예제</title>
+    </head>
+    <body>
+        <script>
+            function mul() {
+                document.write("<table border='1'>");
+                document.write("<tr>");
+                    for (var n=1; n<=9; n++) {
+                        document.write("<th>");
+                        document.write(n + "단");
+                        document.write("</th>");
+                    }
+                document.write("<tr/>");
+                    for ( n=1; n<=9; n++) {
+                        document.write("<tr>");
+                            for (var num=1; num<=9; num++) {
+                                document.write("<th>" + num + "*" + n + "=" + n*num + "</th>");
+                            }
+                        document.write("<tr/>");
+                    }
+                document.write("<table/>");
+            }
+        </script>
+        <button type="button" onclick="mul()">구구단 배열 데이터 보기</button>
+    </body>
+</html> 

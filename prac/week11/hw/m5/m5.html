@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>자바스크립트 예제</title>
+    </head>
+    <body>
+        <p id="data0"></p>
+        <p id="data1"></p>
+        <p id="data2"></p>
+        <script>
+            var data=new Array(
+                ['사과', 21000, 10],
+                ['참외', 18000, 20],
+                ['귤', 15000, 30]
+            )
+            for (var i=0; i <data.length; i++) {
+                var dname=document.getElementById("data" + i);
+                dname.textContent=data[i];
+            }   
+        </script>
+    </body>
+</html>

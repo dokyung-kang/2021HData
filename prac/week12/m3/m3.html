@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>자바스크립트 예제</title>
+    </head>
+    <body>
+        <script>
+            var char = prompt("영문자를 입력하세요:");
+            function result(ans) {
+                if ('a' <= ans && ans <= 'z')
+                    document.write("입력한 글자는 소문자 " + ans.fontcolor('red').bold() + "입니다");
+                else if ('A' <= ans && ans <= 'Z')
+                    document.write("입력한 글자는 대문자 " + ans.fontcolor('red').bold() + "입니다");
+                else if (ans == null)
+                    document.write("입력을 취소했습니다.");
+                else
+                    document.write(ans + "는 영문자가 아닙니다.");
+            }
+            result(char);
+        </script>
+    </body>
+</html>`

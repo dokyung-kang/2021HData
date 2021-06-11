@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>13주 문제2</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img.a2").hide();
+                $("button").click(function(){
+                    $("img.a2").slideToggle();
+                });
+            });
+        </script>
+    <style>
+        .a2 {
+            width: 500px;
+        }
+    </style>
+    </head>
+    <body>
+        <img class="a1" src="./a1.png" alt="">
+        <button class="n1">큰 이미지 보기</button>
+        <img class="a2" src="./a1.png" alt="">
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>자바스크립트 예제</title>
+        <style>
+            button {
+                background-color: aqua;
+                padding: 10px;
+                border-radius: 5%;
+                margin: 30p;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function plus(n) {
+                var total = (n + 1) * n / 2;
+                alert(n + "까지 더한 값은 " + total + "입니다.");
+            }
+        </script>
+        <button onclick="plus(10)">10까지 더하기</button>
+        <button onclick="plus(50)">50까지 더하기</button>
+        <button onclick="plus(100)">100까지 더하기</button>
+    </body>
+</html>

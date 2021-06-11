@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>문제5</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".a1").hide();
+                $(".a2").hide();
+                $("button").click(function(){
+                    $("div.a1").append("서양 음악의 아버지, 바로크 시대의 대작곡가");
+                    $("서양 음악의 어머니, 항상 간결 명쾌하며 밝게 표현").appendTo("div.a2");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>소제목 추가</button>
+        <h1>바로크 시대의 작곡가</h1>
+        <ul>
+            <li>바흐(Johann Sebastian Bach, 1685~1750)</li>
+            <div><p class="a1"></p></div>
+            <li>헨델(Georg Friedrich Handel, 1685~1759)</li>
+            <div class="a2"></div>
+            <li>비발디(Antonio Lucio Vivaldi, 1678~1741)</li>
+            <p></p>
+        </ul>
+    </body>
+</html>
